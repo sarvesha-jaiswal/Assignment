@@ -1,0 +1,22 @@
+Here are some test cases :
+
+Valid addresses with correct PIN code (should return True):
+1. "2nd Phase, 374/B, 80 Feet Rd, Mysore Bank Colony, Banashankari 3rd Stage, Srinivasa Nagar, Bengaluru, Karnataka 560050"
+2. "2nd Phase, 374/B, 80 Feet Rd, Bank Colony, Banashankari 3rd Stage, Srinivasa Nagar, Bengaluru, Karnataka 560050"
+3. "374/B, 80 Feet Rd, State Bank Colony, Banashankari 3rd Stage, Srinivasa Nagar, Bangalore. 560050"
+
+Invalid addresses with incorrect PIN code (should return False):
+1. "2nd Phase, 374/B, 80 Feet Rd, Mysore Bank Colony, Banashankari 3rd Stage, Srinivasa Nagar, Bengaluru, Karnataka 560095"
+2. "Mysore Bank Colony, Bengaluru, Karnataka 560050"
+
+Invalid addresses with correct PIN code (should return False):
+1. "2nd Phase, 374/B, 80 Feet Rd, Mysore Bank Colony, Banashankari 3rd Stage, Srinivasa Nagar, Bengaluru, Karnataka 560050"
+2. "80 Feet Rd, Banashankari 3rd Stage, Srinivasa Nagar, Bengaluru, Karnataka 560050"
+
+Valid addresses with different PIN codes (should return True):
+1. "Ashirwaad, 51/1.Temple Road, Bengaluru, Karnataka 560001"
+2. "46 / Khosa Niwas Bhaudaji Rd Matunga, Bengaluru, Karnataka 560002"
+
+Invalid addresses with non-existent PIN codes (should return False):
+1. "Yashwant Kunj Lbs Marg Hariniwas Circlenaupada Thane, Bengaluru, Karnataka 789012"
+2. "120 Daulat Complex Falkland Rd Opp Bank Of India Grant Road, Bengaluru, Karnataka 123456"
